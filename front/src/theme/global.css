@@ -1,0 +1,46 @@
+.translate-50 {
+    transform: translate(-50%, -50%);
+}
+
+.bg-secondary {
+    background: var(--ion-color-secondary);
+}
+
+.text-medium {
+    color: var(--ion-color-medium);
+}
+
+.text-initial {
+    text-transform: initial;
+    letter-spacing: normal;
+}
+
+.divider {
+    width: 100vw;
+    height: 3px;
+}
+
+.img-cover {
+    object-fit: cover;
+}
+
+.low-brightness {
+    filter: brightness(50%);
+}
+
+.filter-gray {
+    filter: grayscale(1) brightness(50%);
+}
+
+.border-warning {
+    border-color: var(--ion-color-warning);
+}
+
+.aspect-1 {
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.translate-50 {
+    transform: translate(-50%, -50%);
+}

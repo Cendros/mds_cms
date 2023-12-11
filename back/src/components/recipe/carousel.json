@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_recipe_carousels",
+  "info": {
+    "displayName": "Carousel",
+    "icon": "restaurant"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "recipes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recipe.recipe"
+    }
+  }
+}
