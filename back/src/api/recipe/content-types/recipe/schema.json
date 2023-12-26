@@ -15,9 +15,6 @@
     "Name": {
       "type": "string"
     },
-    "Description": {
-      "type": "blocks"
-    },
     "Image": {
       "type": "media",
       "multiple": false,
@@ -35,11 +32,11 @@
       "target": "api::type.type",
       "inversedBy": "recipes"
     },
-    "has_ingredients": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::has-ingredient.has-ingredient",
-      "mappedBy": "recipe"
+    "Description": {
+      "type": "text"
+    },
+    "Ingredients": {
+      "type": "text"
     }
   }
 }

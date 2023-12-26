@@ -677,48 +677,6 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
-export interface ApiHasIngredientHasIngredient extends Schema.CollectionType {
-  collectionName: 'has_ingredients';
-  info: {
-    singularName: 'has-ingredient';
-    pluralName: 'has-ingredients';
-    displayName: 'Has_ingredient';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    ingredient: Attribute.Relation<
-      'api::has-ingredient.has-ingredient',
-      'oneToOne',
-      'api::ingredient.ingredient'
-    >;
-    Quantity: Attribute.Decimal;
-    Unit: Attribute.String;
-    recipe: Attribute.Relation<
-      'api::has-ingredient.has-ingredient',
-      'manyToOne',
-      'api::recipe.recipe'
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::has-ingredient.has-ingredient',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::has-ingredient.has-ingredient',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiHomepageHomepage extends Schema.SingleType {
   collectionName: 'homepages';
   info: {
@@ -750,36 +708,6 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
   };
 }
 
-export interface ApiIngredientIngredient extends Schema.CollectionType {
-  collectionName: 'ingredients';
-  info: {
-    singularName: 'ingredient';
-    pluralName: 'ingredients';
-    displayName: 'Ingredient';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Name: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::ingredient.ingredient',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::ingredient.ingredient',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiRecipeRecipe extends Schema.CollectionType {
   collectionName: 'recipes';
   info: {
@@ -793,18 +721,14 @@ export interface ApiRecipeRecipe extends Schema.CollectionType {
   };
   attributes: {
     Name: Attribute.String;
-    Description: Attribute.Blocks;
     Image: Attribute.Media;
     type: Attribute.Relation<
       'api::recipe.recipe',
       'manyToOne',
       'api::type.type'
     >;
-    has_ingredients: Attribute.Relation<
-      'api::recipe.recipe',
-      'oneToMany',
-      'api::has-ingredient.has-ingredient'
-    >;
+    Description: Attribute.Text;
+    Ingredients: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -866,9 +790,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
-      'api::has-ingredient.has-ingredient': ApiHasIngredientHasIngredient;
       'api::homepage.homepage': ApiHomepageHomepage;
-      'api::ingredient.ingredient': ApiIngredientIngredient;
       'api::recipe.recipe': ApiRecipeRecipe;
       'api::type.type': ApiTypeType;
     }

@@ -1,29 +1,20 @@
 import React from 'react';
-import { personOutline } from 'ionicons/icons';
-import { IonButton, IonButtons, IonHeader, IonIcon, IonTitle, IonToolbar, useIonModal } from '@ionic/react'
-import Profile from '../pages/Profile';
+import { IonButtons, IonHeader, IonTitle, IonToolbar } from '@ionic/react'
 
-const Header: React.FC = () => {
+type HeaderProps = {
+    left?: React.ReactNode
+}
 
-    const ProfileModal = ({onDismiss}: {onDismiss: () => void}) => {
-        return (
-            <Profile dismiss={onDismiss} />
-        )
-    }
-
-    const [presentProfile, dismissProfile] = useIonModal(ProfileModal, {
-        onDismiss: () => dismissProfile()
-    });
-
+const Header: React.FC<HeaderProps> = ({ left }) => {
     return (
-        <IonHeader translucent className='ion-no-border ion-padding'>
+        <IonHeader>
             <IonToolbar>
+                { left ?
+                    <IonButtons slot='start'>
+                        { left }
+                    </IonButtons>
+                : null }
                 <IonTitle>Recettes</IonTitle>
-                <IonButtons slot='end'>
-                    <IonButton onClick={() => presentProfile()}>
-                        <IonIcon icon={personOutline} size='large'/>
-                    </IonButton>
-                </IonButtons>
             </IonToolbar>
         </IonHeader>
     )

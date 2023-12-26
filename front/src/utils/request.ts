@@ -3,7 +3,7 @@ import { API_URL } from "../consts/api";
 export type RequestParams = {
     route: string
     method: string,
-    body?: Record<string, string | number>
+    body?: Record<string, string | number | object>
     token?: string | undefined
 }
 

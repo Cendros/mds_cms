@@ -1358,29 +1358,29 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@7.4.3":
-  version "7.4.3"
-  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-7.4.3.tgz#5c980d62e872d936f9449eefc272da1d35e20f39"
-  integrity sha512-JPQLGojKnI/L0UBVshRv86DOSDj61rJRFYQImU4IcgP/rw5ckxwt3iZ5NtdJl0eEDwu91n68aGJdU+TFJjMJgQ==
+"@ionic/core@7.6.0":
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-7.6.0.tgz#6ca0a50b2bf62aeeccb34d11829526869975101b"
+  integrity sha512-pDX8G915puz8OcLhxfb9MwuvpYZsUOCngJdd+61ibJ6UF+NA2mGatsMqHKzcgelTXtwcHDpi9ZLUD/HNmupqaQ==
   dependencies:
-    "@stencil/core" "^4.4.0"
-    ionicons "7.1.0"
+    "@stencil/core" "^4.8.1"
+    ionicons "^7.2.1"
     tslib "^2.1.0"
 
-"@ionic/react-router@^7.0.0":
-  version "7.4.3"
-  resolved "https://registry.yarnpkg.com/@ionic/react-router/-/react-router-7.4.3.tgz#c2842f5b4f8061857ededddd75d6d321589322d8"
-  integrity sha512-ixQE30XQF409BkgdQGmcEPHvc0K8zuj9v7XBNKMEDyhsohpRSladO4K6w+lusLheT0SdtUqZod8n9KuJ/sXFFA==
+"@ionic/react-router@^7.4.0":
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@ionic/react-router/-/react-router-7.6.0.tgz#220b11bdfd82ba798fa0c39d99c92e4a732f42e9"
+  integrity sha512-HJVXkkUppZ9jqXl4WsHwE4UqWYUphCDD7Vqw0C1iSR31WeF2kd4JqAsY3yrG97qH0HCyXeg05ph2fLVdGNL6pg==
   dependencies:
-    "@ionic/react" "7.4.3"
+    "@ionic/react" "7.6.0"
     tslib "*"
 
-"@ionic/react@7.4.3", "@ionic/react@^7.0.0":
-  version "7.4.3"
-  resolved "https://registry.yarnpkg.com/@ionic/react/-/react-7.4.3.tgz#f37929cd0a96b683d6c781fe876031491236b54c"
-  integrity sha512-j33s8CFe3Cu3AQtIlZdI/W4+e5hDzjRcX6uwqRrizcMQS66Sj9Ik9RN5v3jV/9R8MHLElXZof/AhofNEhe7BTw==
+"@ionic/react@7.6.0", "@ionic/react@^7.4.0":
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@ionic/react/-/react-7.6.0.tgz#afffeafaa02b7fb57c23636e3dc4874cf4d72afd"
+  integrity sha512-2hjTQlxwONH7rcIu1iJ219a6teegTa28DSIxUVZ032f7bltR54dVSRl7W0y4yTPTIjgGUBU3qQu+bgqYbPu9VA==
   dependencies:
-    "@ionic/core" "7.4.3"
+    "@ionic/core" "7.6.0"
     ionicons "^7.0.0"
     tslib "*"
 
@@ -1888,10 +1888,10 @@
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.22.3.tgz#83987e20bba855c450f6d6780e3a20192603f13f"
   integrity sha512-kmVA0M/HojwsfkeHsifvHVIYe4l5tin7J5+DLgtl8h6WWfiMClND5K3ifCXXI2ETDNKiEk21p6jql3Fx9o2rng==
 
-"@stencil/core@^4.4.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.4.0.tgz#3cdc9eafe1ca6b3f8b6d861a3b849d2c65d06a9f"
-  integrity sha512-YlLyCqGBsMEuZb3XTO/STT0TX9eSwjoVhCJgtjVfQOF+ebIMVlojTh40CmDveWiWbth687cbr6S2heeussV8Sg==
+"@stencil/core@^4.0.3", "@stencil/core@^4.8.1":
+  version "4.8.2"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.8.2.tgz#def54fa5afd8024125333451ed1dbf00c3f35e62"
+  integrity sha512-KdZEAtz9VnqMtXOkf51+8mphyRt0fN/LYgtj5M8gnveGspG8KzoyTDzlWt0wsstWIsJJ21RA1yd3AgMMZiu3MA==
 
 "@surma/rollup-plugin-off-main-thread@^2.2.3":
   version "2.2.3"
@@ -5552,19 +5552,19 @@ internal-slot@^1.0.4, internal-slot@^1.0.5:
     has "^1.0.3"
     side-channel "^1.0.4"
 
-ionicons@7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-7.1.0.tgz#25daa91345acedcb0f4fb7da670f5aff2e1f266a"
-  integrity sha512-iE4GuEdEHARJpp0sWL7WJZCzNCf5VxpNRhAjW0fLnZPnNL5qZOJUcfup2Z2Ty7Jk8Q5hacrHfGEB1lCwOdXqGg==
-  dependencies:
-    "@stencil/core" "^2.18.0"
-
 ionicons@^7.0.0:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-7.1.2.tgz#fdf47afdad980349803a705473f51697370b3dad"
   integrity sha512-zZ4njAqSP39H8RRvZhJvkHsv7cBjYE/VfInH218Osf2UVxJITSOutTTd25MW+tAXKN5fheYzclUXUsF55JHUDg==
   dependencies:
     "@stencil/core" "^2.18.0"
+
+ionicons@^7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-7.2.1.tgz#a42b5e8792e6bb0cb1b96b8e732c3110b8930a1b"
+  integrity sha512-2pvCM7DGVEtbbj48PJzQrCADCQrqjU1nUYX9l9PyEWz3ZfdnLdAouqwPxLdl8tbaF9cE7OZRSlyQD7oLOLnGoQ==
+  dependencies:
+    "@stencil/core" "^4.0.3"
 
 ipaddr.js@1.9.1:
   version "1.9.1"

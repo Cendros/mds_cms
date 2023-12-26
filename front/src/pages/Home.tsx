@@ -4,11 +4,11 @@ import Header from '../components/Header';
 import Loading from '../components/Loading';
 import useHome from '../hooks/useHome';
 import Carousel from '../components/Carousel';
+import AllRecipies from '../components/AllRecipies';
 
 const Home: React.FC = () => {
 
     const home = useHome();
-    console.log(home);
 
     if (!home)
         return <Loading text='Chargement' />
@@ -20,6 +20,7 @@ const Home: React.FC = () => {
                 { home.Carousel ?
                     <Carousel data={home.Carousel} />
                 : null }
+                <AllRecipies />
             </IonContent>
         </IonPage>
     );

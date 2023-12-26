@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getHome } from "../services/pages";
+import { getHome } from "../services/api";
 
 const useHome = () => {
     const [home, setHome] = useState<Record<any, any> | undefined>(undefined);
