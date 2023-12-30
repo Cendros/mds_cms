@@ -5,17 +5,20 @@ import { IonReactRouter } from '@ionic/react-router';
 import Home from "../pages/Home";
 import { add, homeOutline } from 'ionicons/icons';
 import New from "../pages/New";
+import { BrowserRouter, Link } from "react-router-dom";
 
 const Router: React.FC = () => {
     return (
         <IonReactRouter>
             <IonTabs>
                 <IonRouterOutlet>
-                <Route exact path="/home" render={() => <Home />} />
-                <Route exact path="/new" render={() => <New />} />
-                <Route exact path="/">
-                    <Redirect to="/home" />
-                </Route>
+                    <BrowserRouter basename="/" />
+                    <Link to='/home' />
+                    <Route path="/home" render={() => <Home />} />
+                    <Route path="/new" render={() => <New />} />
+                    <Route path="/">
+                        <Redirect to="/home" />
+                    </Route>
                 </IonRouterOutlet>
                 <IonTabBar slot="bottom">
                     <IonTabButton tab="home" href="/home">

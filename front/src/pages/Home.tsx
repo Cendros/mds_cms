@@ -8,18 +8,21 @@ import AllRecipies from '../components/AllRecipies';
 
 const Home: React.FC = () => {
 
-    const home = useHome();
-
-    if (!home)
-        return <Loading text='Chargement' />
+    const {home, error} = useHome();
 
     return (
         <IonPage>
             <Header />
             <IonContent fullscreen className='bg-light ion-padding px-5'>
-                { home.Carousel ?
-                    <Carousel data={home.Carousel} />
-                : null }
+                { error ?
+                    null
+                :
+                    <>
+                        { home?.Carousel ?
+                            <Carousel data={home.Carousel} />
+                        : <Loading text='Chargement' /> }
+                    </>
+                }
                 <AllRecipies />
             </IonContent>
         </IonPage>
