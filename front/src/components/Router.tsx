@@ -1,27 +1,21 @@
 import React from "react";
 import { IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from "@ionic/react"
-import { Redirect, Route } from "react-router"
+import { Route } from "react-router"
 import { IonReactRouter } from '@ionic/react-router';
 import Home from "../pages/Home";
 import { add, homeOutline } from 'ionicons/icons';
 import New from "../pages/New";
-import { BrowserRouter, Link } from "react-router-dom";
 
 const Router: React.FC = () => {
     return (
         <IonReactRouter>
             <IonTabs>
                 <IonRouterOutlet>
-                    <BrowserRouter basename="/" />
-                    <Link to='/home' />
-                    <Route path="/home" render={() => <Home />} />
-                    <Route path="/new" render={() => <New />} />
-                    <Route path="/">
-                        <Redirect to="/home" />
-                    </Route>
+                    <Route exact path="/" render={() => <Home />} />
+                    <Route exact path="/new" render={() => <New />} />
                 </IonRouterOutlet>
                 <IonTabBar slot="bottom">
-                    <IonTabButton tab="home" href="/home">
+                    <IonTabButton tab="test" href="/">
                         <IonIcon aria-hidden="true" icon={homeOutline} />
                         <IonLabel>Accueil</IonLabel>
                     </IonTabButton>

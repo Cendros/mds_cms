@@ -50,7 +50,7 @@ const Form: React.FC<FormProps> = ({ dismiss, recipe }) => {
         setIngredients('');
         setType(0);
 
-        location.href = '/home';
+        location.href = '/';
     }
 
     const left = (

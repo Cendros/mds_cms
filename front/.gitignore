@@ -8,9 +8,6 @@
 # testing
 /coverage
 
-# production
-/build
-
 # production - vite
 /dist 
 

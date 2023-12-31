@@ -42,7 +42,7 @@ const Recipe: React.FC<RecipeProps & ModalProps> = ({ id, dismiss }) => {
         
         setIsOpen(false);
         dismiss();
-        location.href = '/home';
+        location.href = '/';
     }
 
     const left = (
