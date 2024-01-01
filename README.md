@@ -53,7 +53,7 @@ Cette documentation vous permettra d'utiliser le back office de l'application de
 
 Une fois que le serveur de Strapi est accessible, ouvrez l'adresse suivante sur votre navigateur : [http://localhost:1337/admin](http://localhost:1337/admin). Vous arriverez sur ce formulaire.
 
-![[images/login.png]]
+![](images/login.png)
 
 Créez votre compte et passez à l'étape suivante.
 
@@ -64,7 +64,7 @@ Afin de permettre aux utilisateurs d'effectuer des actions sur les entités, vou
 - Rendez vous dans le menu *Setting* > *Users & Permissions plugin* > *Roles* > *Public*.
 - Dépliez les parties **Homepage**, **Recipe** et **Type** en cochant la case *Select all* pour chaque partie.
 
-![[images/roles.png]]
+![](images/roles.png)
 ***
 #### Appuyez sur le bouton *Save* pour sauvegarder
 ***
@@ -96,7 +96,7 @@ Entrez les informations suivantes :
 - Description : Une description de la recette
 - Ingrédients : La liste des ingrédients
 
-![[images/recipe.png]]
+![](images/recipe.png)
 
 ***
 #### Appuyez sur le bouton *Save* et *Publish* pour rendre cette recette accessible.
@@ -109,7 +109,7 @@ La recette est maintenant visible sur l'application.
 Vous avez la possibilité de créer un carrousel pour mettre des recettes en avant sur la page d'accueil. Pour cela rendez vous dans le menu *Content Manager* > *Single Type* > *Homepage* et appuyez sur le bouton +.
 Entrez un titre qui sera affiché au dessus du carrousel et sélectionnez les recettes que vous voulez afficher.
 
-![[images/carrousel.png]]
+![](images/carrousel.png)
 
 ***
 #### Appuyez sur le bouton *Save* et *Publish* pour rendre le carrousel visible.
