@@ -1,3 +1,7 @@
+# Réalisé par Ludovic Lahougue - M2 DFS
+
+***
+
 # Installation
 
 Clonez ou téléchargez le [répertoire Git](https://github.com/Cendros/mds_cms).
@@ -44,6 +48,16 @@ Démarrez l'application
 ```bash
 serve -s build
 ```
+
+Rendez-vous sur l'adresse indiqué par le terminal pour accéder à l'application.
+
+### Note
+
+L'application a été conçue pour être exclusivement une application mobile. Il est donc fortement conseillé de mettre votre navigateur en vue mobile.
+
+- Sur Firefox : Ctrl + Maj + m
+- Sur Chrome : Ctrl + Maj + c puis Ctrl+ Maj + m
+
 ***
 # Documentation
 
