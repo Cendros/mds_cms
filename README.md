@@ -2,6 +2,24 @@
 
 ***
 
+# Conseil
+
+Pour l'installation, vous aurez besoin d'ouvrir des terminaux pour vous rendre dans des dossier.
+
+Il existe un raccourci sur windows pour ouvrir un terminal directement au chemin souhaité.
+
+Pour cela, rendez vous dans le dossier où vous voulez ouvrir le terminal et cliquez dans la barre à côté du chemin.
+
+![](images/cmd1.png)
+
+Puis écrivez *cmd* et appuyez sur entrée.
+
+![](images/cmd2.png)
+
+Votre terminal est maintenant ouvert dans ce dossier.
+
+***
+
 # Installation
 
 - ## Par clonage (plus rapide si git est installé sur votre machine)
@@ -20,22 +38,6 @@ Téléchargez le fichier .zip et décompressez le dans un dossier sur votre mach
 ## Prérequis
 - Version de node : entre 18.0.0 et 20.x.x
 - npm installé sur votre machine (vous pouvez également utiliser yarn pour certaines commandes)
-
-## Conseil
-
-Pour l'installation, vous aurez besoin d'ouvrir des terminaux pour vous rendre dans des dossier.
-
-Il existe un raccourci sur windows pour ouvrir un terminal directement au chemin souhaité.
-
-Pour cela, rendez vous dans le dossier où vous voulez ouvrir le terminal et cliquez dans la barre à côté du chemin.
-
-![](images/cmd1.png)
-
-Puis écrivez *cmd* et appuyez sur entrée.
-
-![](images/cmd2.png)
-
-Votre terminal est maintenant ouvert dans ce dossier.
 
 ***
 
