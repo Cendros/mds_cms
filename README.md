@@ -4,9 +4,20 @@
 
 # Installation
 
-Clonez ou téléchargez le [répertoire Git](https://github.com/Cendros/mds_cms).
+- ## Par clonage (plus rapide si git est installé sur votre machine)
 
-## Prérequis
+Rendez-vous dans le répertoire où vous souhaitez placer le dossier et ouvrez un terminal à cet emplacement.
+
+Exécutez cette commande
+```bash
+git clone https://github.com/Cendros/mds_cms.git
+```
+
+- ## Par téléchargement
+
+Téléchargez le fichier .zip et décompressez le dans un dossier sur votre machine.
+
+# Prérequis
 Version de node : entre 18.0.0 et 20.x.x
 
 ***
