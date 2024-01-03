@@ -18,7 +18,8 @@ git clone https://github.com/Cendros/mds_cms.git
 Téléchargez le fichier .zip et décompressez le dans un dossier sur votre machine.
 
 ## Prérequis
-Version de node : entre 18.0.0 et 20.x.x
+- Version de node : entre 18.0.0 et 20.x.x
+- npm installé sur votre machine (vous pouvez également utiliser yarn pour certaines commandes)
 
 ## Conseil
 
@@ -40,7 +41,7 @@ Votre terminal est maintenant ouvert dans ce dossier.
 
 ## Partie admin
 
-Ouvrez un terminal et dirigez vous dans le dossier *back*.
+Ouvrez un terminal à la racine du projet et dirigez vous dans le dossier *back*.
 ```bash
 cd back
 ```
@@ -52,6 +53,13 @@ yarn
 npm i
 ```
 
+Importez les données
+```bash
+yarn strapi import -f export.tar.gz.enc --force --key root
+### OU ###
+npx strapi import -f export.tar.gz.enc --force --key root
+```
+
 Démarrez le serveur
 ```bash
 yarn start
@@ -61,7 +69,7 @@ npm run start
 
 ## Partie application
 
-Ouvrez un terminal et dirigez vous dans le dossier *front*.
+Ouvrez un terminal à la racine du projet et dirigez vous dans le dossier *front*.
 ```bash
 cd front
 ```
@@ -92,27 +100,15 @@ Cette documentation vous permettra d'utiliser le back office de l'application de
 
 # Accès
 
-Une fois que le serveur de Strapi est accessible, ouvrez l'adresse suivante sur votre navigateur : [http://localhost:1337/admin](http://localhost:1337/admin). Vous arriverez sur ce formulaire.
+Une fois que le serveur de Strapi est accessible, ouvrez l'adresse suivante sur votre navigateur : [http://localhost:1337/admin](http://localhost:1337/admin). Vous arriverez sur le formulaire de connexion.
 
-![](images/login.png)
-
-Créez votre compte et passez à l'étape suivante.
-
-# Permissions
-
-Afin de permettre aux utilisateurs d'effectuer des actions sur les entités, vous devez leur donner différents droits.
-
-- Rendez vous dans le menu *Setting* > *Users & Permissions plugin* > *Roles* > *Public*.
-- Dépliez les parties **Homepage**, **Recipe** et **Type** en cochant la case *Select all* pour chaque partie.
-
-![](images/roles.png)
-***
-#### Appuyez sur le bouton *Save* pour sauvegarder
-***
+Connectez vous avec ces identifiants :
+- email : admin@recipe.fr
+- mot de passe : Admin123
 
 # Créations d'entité
 
-Pour la démonstration de création d'entités, nous créerons une recette de cookies.
+Pour la démonstration de création d'entités, nous créerons une recette de cookies (cette recette est déjà dans la base de données à l'installation).
 
 ## Types de recettes
 
