@@ -1,9 +1,40 @@
+# Réalisé par Ludovic Lahougue - M2 DFS
+
+***
+
 # Installation
 
-Clonez ou téléchargez le [répertoire Git](https://github.com/Cendros/mds_cms).
+- ## Par clonage (plus rapide si git est installé sur votre machine)
+
+Rendez-vous dans le répertoire où vous souhaitez placer le dossier et ouvrez un terminal à cet emplacement.
+
+Exécutez cette commande
+```bash
+git clone https://github.com/Cendros/mds_cms.git
+```
+
+- ## Par téléchargement
+
+Téléchargez le fichier .zip et décompressez le dans un dossier sur votre machine.
 
 ## Prérequis
 Version de node : entre 18.0.0 et 20.x.x
+
+## Conseil
+
+Pour l'installation, vous aurez besoin d'ouvrir des terminaux pour vous rendre dans des dossier.
+
+Il existe un raccourci sur windows pour ouvrir un terminal directement au chemin souhaité.
+
+Pour cela, rendez vous dans le dossier où vous voulez ouvrir le terminal et cliquez dans la barre à côté du chemin.
+
+![](images/cmd1.png)
+
+Puis écrivez *cmd* et appuyez sur entrée.
+
+![](images/cmd2.png)
+
+Votre terminal est maintenant ouvert dans ce dossier.
 
 ***
 
@@ -44,6 +75,16 @@ Démarrez l'application
 ```bash
 serve -s build
 ```
+
+Rendez-vous sur l'adresse indiqué par le terminal pour accéder à l'application.
+
+### Note
+
+L'application a été conçue pour être exclusivement une application mobile. Il est donc fortement conseillé de mettre votre navigateur en vue mobile.
+
+- Sur Firefox : Ctrl + Maj + m
+- Sur Chrome : Ctrl + Maj + c puis Ctrl+ Maj + m
+
 ***
 # Documentation
 
