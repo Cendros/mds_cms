@@ -17,8 +17,24 @@ git clone https://github.com/Cendros/mds_cms.git
 
 Téléchargez le fichier .zip et décompressez le dans un dossier sur votre machine.
 
-# Prérequis
+## Prérequis
 Version de node : entre 18.0.0 et 20.x.x
+
+## Conseil
+
+Pour l'installation, vous aurez besoin d'ouvrir des terminaux pour vous rendre dans des dossier.
+
+Il existe un raccourci sur windows pour ouvrir un terminal directement au chemin souhaité.
+
+Pour cela, rendez vous dans le dossier où vous voulez ouvrir le terminal et cliquez dans la barre à côté du chemin.
+
+![](images/cmd1.png)
+
+Puis écrivez *cmd* et appuyez sur entrée.
+
+![](images/cmd2.png)
+
+Votre terminal est maintenant ouvert dans ce dossier.
 
 ***
 
