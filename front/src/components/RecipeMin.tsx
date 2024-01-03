@@ -29,7 +29,7 @@ const RecipeMin: React.FC<RecipeProps> = ({ recipe }) => {
                 <IonCardTitle>{recipe.attributes.Name}</IonCardTitle>
             </IonCardHeader>
             <IonCardContent>
-                <IonBadge color='secondary'>{recipe.attributes.type.data.attributes.Name}</IonBadge>
+                { recipe.attributes.type.data ? <IonBadge color='secondary'>{recipe.attributes.type.data.attributes.Name}</IonBadge> : null }
             </IonCardContent>
         </IonCard>
     )

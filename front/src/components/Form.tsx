@@ -21,6 +21,7 @@ const Form: React.FC<FormProps> = ({ dismiss, recipe }) => {
 
     const types = useTypes();
     
+    
     const t = useRef<HTMLIonTextareaElement>(null);
 
     useEffect(() => {
@@ -41,8 +42,8 @@ const Form: React.FC<FormProps> = ({ dismiss, recipe }) => {
         setSubmitting(true);
         
         if (recipe)
-            await editRecipe(recipe.id, name, description, ingredients, type)
-        else await createRecipe(name, description, ingredients, type);
+            await editRecipe(recipe.id, name, description, ingredients, types?.length? type : undefined)
+        else await createRecipe(name, description, ingredients, types?.length? type : undefined);
         setSubmitting(false);
 
         setName('');

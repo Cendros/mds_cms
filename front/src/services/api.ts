@@ -28,7 +28,7 @@ export const deleteRecipeApi = async (id: number) => {
     })
 }
 
-export const createRecipe = async (name: string, description: string, ingredients: string, typeId: number) => {
+export const createRecipe = async (name: string, description: string, ingredients: string, typeId: number | undefined) => {
     return await request({
         route: '/recipes',
         method: 'post',
@@ -37,13 +37,13 @@ export const createRecipe = async (name: string, description: string, ingredient
                 Name: name,
                 Description: description,
                 Ingredients: ingredients,
-                type: typeId
+                ...typeId && { type: typeId }
             }
         }
     })
 }
 
-export const editRecipe = async (id: number, name: string, description: string, ingredients: string, typeId: number) => {
+export const editRecipe = async (id: number, name: string, description: string, ingredients: string, typeId: number | undefined) => {
     return await request({
         route: `/recipes/${id}`,
         method: 'put',
@@ -52,7 +52,7 @@ export const editRecipe = async (id: number, name: string, description: string, 
                 Name: name,
                 Description: description,
                 Ingredients: ingredients,
-                type: typeId
+                ...typeId && { type: typeId }
             }
         }
     })
