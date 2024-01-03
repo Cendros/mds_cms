@@ -151,3 +151,7 @@ Entrez un titre qui sera affiché au dessus du carrousel et sélectionnez les re
 ***
 #### Appuyez sur le bouton *Save* et *Publish* pour rendre le carrousel visible.
 ***
+
+# Diagrammes
+
+Les différents diagrammes de l'application sont disponibles à la racine du projet sous forme de fichers PNG.
